@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    min-height:100vh;
+    background-color: aqua;
+  }
+
+
+  body >div {
+    width:30vw;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+  }
+
+
+  .main-container{
+    z-index:5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius:10px;
+    transform:translate(-50%,-50%) scale(1);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  }
+ 
+
+  .main-container header{
+    width :100%;
+    padding:16px 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .main-container header .main-heading{
+    font-size:25px;
+    font-weight:600;
+    color:rgba(21, 19, 19, 0.94);
+    user-select: none;
+  }
+
+
+  .main-container>.line{
+    width:100%;
+    height:1px;
+    background-color:lightgrey;
+  }
+
+
+  .main-container>section{
+    width:100%;
+    position: relative;
+    padding:25px 35px 20px 35px;
+  }
+
+
+  form{
+    width:inherit;
+  }
+
+
+  form .input-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  form .input-section .input-container{
+    width:100%;
+    margin-bottom:30px;
+    position:relative;
+  }
+
+
+  form .input-section .input-container:last-child{
+    margin-bottom:25px;
+  }
+
+ 
+  form .input-section .input-container .floating-label{
+    position:absolute;  
+    display: inline-block;
+    padding:10px 0px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+
+ 
+
+  form .input-section .input-container>input{
+    width:100%;
+    border:none;
+    outline:none;
+    font-size: 16px;
+    border-bottom:2px solid grey;
+    background:transparent;
+    padding:10px 5px;
+    transition: all 0.3s ease;
+  }
+
+
+  .input-container .floating-label {
+    position: absolute;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    font-weight:normal;
+    color:grey;
+  }
+  
+  
+  .input-container:focus-within  .floating-label,
+  .input-container:not(:focus-within):valid  .floating-label{
+    transform: translateY(-20px);
+    font-size: 13px;
+    opacity: 1;
+    font-weight:500;
+    color: rgb(10, 69, 109);
+  }
+
+
+  form .input-section .input-container>input:focus{
+    border-bottom:2px solid rgb(21, 118, 183);
+  }
+
+ 
+.forgot-section{
+  width:100%;
+}
+
+
+.forgot-section a{
+  text-decoration: none;
+  font-size: 16px;
+  color:rgba(128, 128, 128, 0.874);
+}
+
+
+.button-section
+{
+  margin-top:20px;
+  margin-bottom: 10px;
+  width:inherit;
+  display: flex;
+}
+
+ 
+
+.button-section .login-btn,.signup-btn {
+  width:100%;
+  border:none;
+  outline:none;
+  font-size: 16px;
+  background-color:rgb(38 144 217) ;
+  color:white;
+  border-radius:20px;
+  font-weight: 500;
+  padding:8px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.signup-btn.disable{
+  background-color: darkred;
+  color:white;
+}
+
+.button-section .login-btn:hover{
+  background-color:rgb(20, 89, 134) ;
+}
+
+ 
+footer{
+   display: flex;
+   margin-bottom: 40px;
+}
+
+
+footer .last-info span
+{
+  font-size: 15px;
+  color:rgba(76, 76, 76, 0.938);
+}
+
+
+footer .last-info a{
+ text-decoration: none;
+ color:rgb(20, 89, 134);
+}
+
+ 
+
+ 
